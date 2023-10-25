@@ -1,12 +1,15 @@
 #!/usr/bin/python3
-def safe_print_integer(value, int):
-    try:
-        if isinstance(value, int):
-            print("{:d}".format(value))
+"""Define a class Square."""
 
-            return (True)
-        else:
-            return (False)
-    except Exception as e:
-        print(e)
-    
+
+class Square:
+    """Class Square that defines a square object
+    """
+    def __init__(self, size):
+        """Initialize method that stores the size of the square
+
+        Args:
+        param1 (int): size of the square
+        """
+        self.__size = size
+   
