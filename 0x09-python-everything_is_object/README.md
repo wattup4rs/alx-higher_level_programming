@@ -1,1 +1,1 @@
-# simple_shell
+# 200~x09. Python - Everything is object
