@@ -14,7 +14,7 @@ Defines a Rectangle class
 
 """
 
-Class Rectangle:
+class Rectangle:
     """ Represent a rectangle."""
     pass
 
