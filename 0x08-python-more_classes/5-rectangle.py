@@ -4,7 +4,12 @@ Defines a Rectangle class
 """
 
 
-def __init(self, width=0, height=0):
+
+class Rectangle:
+    """Represent a rectangle."""
+
+
+    def __init(self, width=0, height=0):
     """Initialize a new Rectangle.
 
     Args:
@@ -74,3 +79,4 @@ def __init(self, width=0, height=0):
     def __del__(self):
         """Print a message for every deletion of a Rectangle."""
         print("Bye rectangle...")
+
