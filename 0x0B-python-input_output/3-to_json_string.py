@@ -12,4 +12,12 @@ def to_json_string(my_obj):
 This function serializes python objects to 
 JSON representation of an object(string)
 """
-return json.dumps(my_obj)
+    Args:
+        my_obj: object
+
+    Raises:
+        Exception: when the object can't be encoded
+    """
+
+    obj = json.dumps(my_obj)
+    return obj

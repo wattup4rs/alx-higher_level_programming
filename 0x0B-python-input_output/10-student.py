@@ -3,7 +3,7 @@
 module: 10_student
 resources: a class called Student
 """
-class Student()
+class Student():
     """
     classname: Student
     instance variables: first_name, last_name, age

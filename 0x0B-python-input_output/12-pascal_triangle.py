@@ -3,7 +3,7 @@
 module: 12-pascal_triangle
 resourses: pascal_triangle function - returns a representation
 of the pascal triangle in a 2 dimension list
-""
+"""
 def pascal_triangle(n):
     """
     Algorithm

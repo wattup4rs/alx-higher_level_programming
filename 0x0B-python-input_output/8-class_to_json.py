@@ -1,11 +1,13 @@
 #!/usr/bin/python3
-MyClass = __import__('8-class_to_json').class_to_json
+"""
+module: 8-class_to_json
+resources: class_to_json(obj) function
+"""
 
-m = MyClass("John")
-m.number = 89
-print(type(m))
-print(m)
 
-mj = class_to_json(m)
-print(type(mj))
-print(mj)
+def class_to_json(obj):
+    """
+    Takes a python object and extracts a JSON
+    from it
+    """
+    return obj.__dict__
