@@ -1,14 +1,17 @@
 #!/usr/bin/python3
-"""2-Rectangle.py"""
-
-
+"""
+Defines a Rectangle class.
+"""
 class Rectangle:
-    """class that defines a rectangle by: (based on 1-rectangle.py)"""
+    """class that defines a rectangle by: (based on 6-rectangle.py)"""
+    number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """initialize private instances attribute"""
         self.height = height
         self.width = width
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -48,3 +51,21 @@ class Rectangle:
             return 0
         else:
             return 2 * (self.__width + self.__height)
+
+    def __str__(self):
+        """prints the rectangle with the character #"""
+        if self.__width == 0 or self.__height == 0:
+            return ""
+        return '\n'.join([str(
+            self.print_symbol) * self.__width] * self.__height)
+
+    def __repr__(self):
+        """return a string representation of the rectangle"""
+        return "Rectangle({}, {})".format(self.__width, self.__height)
+
+    def __del__(self):
+        """Print the message `Bye rectangle...` when an instance of Rectangle
+        is deleted"""
+        print("Bye rectangle...")
+        Rectangle.number_of_instances -= 1
+

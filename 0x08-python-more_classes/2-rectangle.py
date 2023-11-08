@@ -3,26 +3,13 @@
 """
 Defines a Rectangle class.
 This module contains a class Rectangle
-
->>> Rectangle = __import__('2-rectangle').Rectangle
-
->>> my_rectangle = Rectangle(2, 4)
->>> print(type(my_rectangle))
-<class '2-rectangle.Rectangle'>
-
->>> dict_result = my_rectangle.__dict__
->>> print(dict(sorted(dict_result.items())))
-{'_Rectangle__height': 4, '_Rectangle__width': 2}
-
 """
 
 
-class rectangle:
-    """
-    Represents a rectangle.
-    """
+class Rectangle:
+    """Represent a rectangle."""
 
-    def __init(self, width=0, height=0):
+    def __init__(self, width=0, height=0):
         """Initialize a new Rectangle.
 
         Args:
@@ -31,11 +18,10 @@ class rectangle:
         """
         self.width = width
         self.height = height
+
     @property
     def width(self):
-        """
-        Get/set width of the rect.
-        """
+        """Get/set the width of the Rectangle."""
         return self.__width
 
     @width.setter
@@ -69,16 +55,3 @@ class rectangle:
             return (0)
         return ((self.__width * 2) + (self.__height * 2))
 
-    def __str__(self):
-        """Return the printable representation of the Rectangle.
-
-        Represents the rectangle with the # character.
-        """
-        if self.__width == 0 or self.__height == 0:
-            return ("")
-
-        rect = []
-        for i in range(self.__height):
-            [rect.append('#') for j in range(self.__width)]
-            if i != self.__height - 1:
-                rect.append("\n")
