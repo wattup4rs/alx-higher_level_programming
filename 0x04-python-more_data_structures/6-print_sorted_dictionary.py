@@ -3,4 +3,3 @@ def print_sorted_dictionary(a_dictionary)
     for key in sorted(a_dictionary):
         value = a_dictionary[key]
         print(f'{key}: {value}')
-
