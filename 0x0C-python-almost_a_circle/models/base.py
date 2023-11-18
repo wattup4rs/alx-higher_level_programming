@@ -2,15 +2,16 @@
 """
 base
 """
-
+import json
+import csv
 
 class Base:
     """
     the first class Base
     """
-    __nb__objects = 0
+    __nb_objects = 0
 
-    def __init__(self, id=none):
+    def __init__(self, id=None):
          if id is not None:
             self.id = id
         else:

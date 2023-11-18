@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-module Swuare
+module Square
 """
 
 from models.rectangle import Rectangle
