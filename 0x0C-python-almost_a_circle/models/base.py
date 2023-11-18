@@ -6,9 +6,7 @@ import json
 import csv
 
 class Base:
-    """
-    the first class Base
-    """
+    """ the first class Base """
     __nb_objects = 0
 
     def __init__(self, id=None):
@@ -94,7 +92,7 @@ class Base:
         @cls: class
         Returns:
         If the file doesn’t exist, return an empty list
-        Otherwise, return a list of instances - the type of
+        Otherwise, return  list of instances - the type of
         these instances depends on cls
         """
         try:
