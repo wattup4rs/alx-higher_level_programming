@@ -26,3 +26,4 @@ void print_python_string(PyObjects *p)
 	printf("  length: %ld\n", length);
 	printf("  value: %ls\n", PyUnicode_AsWideCharString(p, &length));
 }
+
