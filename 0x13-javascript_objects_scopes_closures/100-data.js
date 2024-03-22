@@ -1,0 +1,2 @@
+#!/usr/bin/node
+exports.lis = [1, 2, 3, 4, 5];
